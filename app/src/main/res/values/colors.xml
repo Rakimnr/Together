@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors (60%) - Blue theme -->
+    <color name="primary_blue">#4A90E2</color>
+    <color name="primary_blue_dark">#357ABD</color>
+    <color name="primary_background">#F8F9FA</color>
+
+    <!-- Secondary Colors (30%) - Green and Orange -->
+    <color name="secondary_green">#7ED321</color>
+    <color name="secondary_orange">#FF9500</color>
+    <color name="secondary_lime">#B8E986</color>
+
+    <!-- Accent Colors (10%) - Purple and Pink -->
+    <color name="accent_purple">#7B68EE</color>
+    <color name="accent_pink">#FF6B9D</color>
+    <color name="accent_yellow">#FFD700</color>
+
+    <!-- Neutral Colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray_dark">#2C2C2C</color>
+    <color name="gray_medium">#6B7280</color>
+    <color name="gray_light">#F3F4F6</color>
+    <color name="gray_border">#E5E7EB</color>
+
+    <!-- Onboarding Background Colors -->
+    <color name="onboarding_blue">#4A90E2</color>
+    <color name="onboarding_green">#7ED321</color>
+    <color name="onboarding_orange">#FF9500</color>
+
+    <!-- Launch Screen -->
+    <color name="launch_yellow">#FFD700</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#1F2937</color>
+    <color name="text_secondary">#6B7280</color>
+    <color name="text_hint">#9CA3AF</color>
+
+    <!-- Status Colors -->
+    <color name="success_green">#10B981</color>
+    <color name="error_red">#EF4444</color>
+    <color name="warning_yellow">#F59E0B</color>
+
+    <!-- Primary Colors (60%) - Main background and dominant elements -->
+    <color name="primary_background1">#FFFFFF</color>
+    <color name="secondary_background">#F5F5F5</color>
+    <color name="card_background">#FFFFFF</color>
+
+    <!-- Secondary Colors (30%) - Supporting elements -->
+    <color name="track_budget_header">#D4A5A5</color>
+    <color name="manage_tasks_header">#5A9BD4</color>
+    <color name="plan_projects_header">#7FB069</color>
+    <color name="manage_members_header">#FF9F43</color>
+
+    <!-- Accent Colors (10%) - Call to action buttons and highlights -->
+    <color name="income_green">#4CAF50</color>
+    <color name="expense_red">#F44336</color>
+    <color name="button_blue">#2196F3</color>
+    <color name="success_green1">#8BC34A</color>
+    <color name="warning_orange">#FF9800</color>
+    <color name="submit_green">#8BC34A</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary1">#212121</color>
+    <color name="text_secondary1">#757575</color>
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_hint1">#BDBDBD</color>
+
+    <!-- Status Colors -->
+    <color name="pending_background">#FFF3E0</color>
+    <color name="pending_text">#FF9800</color>
+    <color name="present_indicator">#4CAF50</color>
+
+    <!-- Border and Divider Colors -->
+    <color name="border_color">#E0E0E0</color>
+    <color name="divider_color">#EEEEEE</color>
+
+    <!-- Shadow Colors -->
+    <color name="shadow_light">#20000000</color>
+</resources>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/onboarding_green">
+
+    <!-- Logo Section -->
+    <FrameLayout
+        android:id="@+id/fl_logo_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_logo_rounded"
+        android:padding="20dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleX="2.0"
+            android:scaleY="2.1"
+            android:src="@drawable/together"
+            android:contentDescription="@string/app_name" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_primary"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fl_logo_container" />
+
+    <!-- What You Can Do Title -->
+
+    <!-- Features List -->
+    <TextView
+        android:id="@+id/tv_what_you_can_do"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="@string/what_you_can_do"
+        android:textColor="@color/text_primary"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_app_name" />
+
+    <!-- Youth Steps Text -->
+
+    <LinearLayout
+        android:id="@+id/ll_features"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_what_you_can_do">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/manage_members"
+            android:textColor="@color/text_primary"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/plan_projects"
+            android:textColor="@color/text_primary"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/manage_tasks"
+            android:textColor="@color/text_primary"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/track_budget"
+            android:textColor="@color/text_primary"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_youth_steps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="youth_steps"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:textColor="@color/secondary_green"
+        android:alpha="0.3"
+        android:gravity="center"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toTopOf="@id/btn_next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_features" />
+
+    <!-- Background Wave -->
+    <View
+        android:id="@+id/view_wave"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/bg_wave_green"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <!-- Next Button -->
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:text="@string/next"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:background="@drawable/bg_button_dark_green"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Skip Button -->
+    <TextView
+        android:id="@+id/tv_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skip"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="?attr/selectableItemBackground"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

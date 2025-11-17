@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/primary_background">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="32dp">
+
+        <!-- Header Background -->
+        <View
+            android:id="@+id/view_header_bg"
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            android:background="@drawable/bg_profile_header_gradient"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Back Button -->
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_arrow_back"
+            android:background="@drawable/bg_circle_white_transparent"
+            android:padding="12dp"
+            android:layout_margin="20dp"
+            android:contentDescription="Back"
+            app:tint="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Profile Picture -->
+        <ImageView
+            android:id="@+id/iv_profile_picture"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/ic_profile_placeholder"
+            android:background="@drawable/bg_profile_circle"
+            android:scaleType="centerCrop"
+            android:contentDescription="Profile Picture"
+            android:layout_marginTop="100dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- User Name -->
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rakindu Rajapaksha"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_profile_picture" />
+
+        <!-- Personal Information Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_personal_info"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="24dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_user_name">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <!-- Section Header -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="24dp"
+                        android:layout_marginEnd="8dp"
+                        android:contentDescription="Personal Info"
+                        android:src="@drawable/ic_person"
+                        app:tint="@color/primary_blue" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Personal Information"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_primary" />
+
+                    <ImageView
+                        android:id="@+id/iv_edit_profile"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_edit"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:padding="4dp"
+                        android:contentDescription="Edit Profile"
+                        app:tint="@color/secondary_orange" />
+
+                </LinearLayout>
+
+                <!-- Email Info -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/ic_email"
+                        android:background="@drawable/bg_icon_circle_blue"
+                        android:padding="6dp"
+                        android:contentDescription="Email"
+                        app:tint="@color/white"
+                        android:layout_marginEnd="12dp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Email Address"
+                            android:textSize="12sp"
+                            android:textColor="@color/text_secondary" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="rakindu03@gmail.com"
+                            android:textSize="16sp"
+                            android:textColor="@color/text_primary"
+                            android:layout_marginTop="2dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Age Info -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/ic_calendar"
+                        android:background="@drawable/bg_icon_circle_orange"
+                        android:padding="6dp"
+                        android:contentDescription="Age"
+                        app:tint="@color/white"
+                        android:layout_marginEnd="12dp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Age"
+                            android:textSize="12sp"
+                            android:textColor="@color/text_secondary" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="22 years old"
+                            android:textSize="16sp"
+                            android:textColor="@color/text_primary"
+                            android:layout_marginTop="2dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Phone Info -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/ic_phone"
+                        android:background="@drawable/bg_icon_circle_green"
+                        android:padding="6dp"
+                        android:contentDescription="Phone"
+                        app:tint="@color/white"
+                        android:layout_marginEnd="12dp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Phone Number"
+                            android:textSize="12sp"
+                            android:textColor="@color/text_secondary" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0755980398"
+                            android:textSize="16sp"
+                            android:textColor="@color/text_primary"
+                            android:layout_marginTop="2dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Position Info -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/ic_position"
+                        android:background="@drawable/bg_icon_circle_purple"
+                        android:padding="6dp"
+                        android:contentDescription="Position"
+                        app:tint="@color/white"
+                        android:layout_marginEnd="12dp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Position"
+                            android:textSize="12sp"
+                            android:textColor="@color/text_secondary" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="President"
+                            android:textSize="16sp"
+                            android:textColor="@color/text_primary"
+                            android:layout_marginTop="2dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Additional Options -->
+        <LinearLayout
+            android:id="@+id/ll_profile_options"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cv_personal_info">
+
+            <!-- Account Settings -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_account_settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                android:foreground="?attr/selectableItemBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_settings"
+                        android:contentDescription="Settings"
+                        app:tint="@color/text_secondary"
+                        android:layout_marginEnd="16dp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Account Settings"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_primary" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_arrow_right"
+                        android:contentDescription="Navigate"
+                        app:tint="@color/text_hint" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Privacy Settings -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_privacy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                android:foreground="?attr/selectableItemBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_privacy"
+                        android:contentDescription="Privacy"
+                        app:tint="@color/text_secondary"
+                        android:layout_marginEnd="16dp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Privacy &amp; Security"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_primary" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_arrow_right"
+                        android:contentDescription="Navigate"
+                        app:tint="@color/text_hint" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Help & Support -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_help"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                android:foreground="?attr/selectableItemBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_help"
+                        android:contentDescription="Help"
+                        app:tint="@color/text_secondary"
+                        android:layout_marginEnd="16dp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Help &amp; Support"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_primary" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_arrow_right"
+                        android:contentDescription="Navigate"
+                        app:tint="@color/text_hint" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Logout -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                android:foreground="?attr/selectableItemBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_logout"
+                        android:contentDescription="Logout"
+                        app:tint="@color/error_red"
+                        android:layout_marginEnd="16dp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Logout"
+                        android:textSize="16sp"
+                        android:textColor="@color/error_red" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_arrow_right"
+                        android:contentDescription="Navigate"
+                        app:tint="@color/text_hint" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

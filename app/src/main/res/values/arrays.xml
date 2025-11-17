@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Leadership Positions for Spinner -->
+    <string-array name="leadership_positions">
+        <item>Select a position</item>
+        <item>President</item>
+        <item>Vice President</item>
+        <item>Secretary</item>
+        <item>Treasurer</item>
+        <item>Event Coordinator</item>
+        <item>Member</item>
+    </string-array>
+</resources>

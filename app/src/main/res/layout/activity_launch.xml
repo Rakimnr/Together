@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/launch_yellow">
+
+    <!-- Main Content Center -->
+    <LinearLayout
+        android:id="@+id/ll_main_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Logo Container -->
+        <FrameLayout
+            android:id="@+id/fl_logo_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_logo_rounded"
+            android:padding="18dp"
+            android:layout_marginBottom="40dp">
+
+            <ImageView
+                android:id="@+id/iv_logo"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleX="1.75"
+                android:scaleY="1.75"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/together" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="40dp" />
+
+        <!-- Tagline Text -->
+        <TextView
+            android:id="@+id/tv_empowering_youth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/empowering_youth"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:gravity="center"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tv_organizing_unity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/organizing_unity"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <!-- Loading Animation -->
+    <LinearLayout
+        android:id="@+id/ll_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ProgressBar
+            android:id="@+id/pb_loading"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:indeterminateTint="@color/text_primary"
+            android:layout_marginEnd="12dp" />
+
+        <TextView
+            android:id="@+id/tv_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loading"
+            android:textSize="16sp"
+            android:textColor="@color/text_primary" />
+
+    </LinearLayout>
+
+    <!-- Background Decorative Circle -->
+    <View
+        android:id="@+id/view_bg_circle"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@drawable/bg_circle_transparent"
+        android:alpha="0.1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

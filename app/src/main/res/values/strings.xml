@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_names">Together</string>
+
+    <!-- Login Screen -->
+    <string name="welcome_back">Welcome Back</string>
+    <string name="sign_in_account">Sign in to your account</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="enter_email">Enter your email</string>
+    <string name="enter_password">Enter your password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="sign_in">Sign In</string>
+    <string name="or_continue_with">or continue with</string>
+    <string name="dont_have_account">Don\'t have an account?</string>
+    <string name="sign_up_here">Sign Up here</string>
+
+    <!-- Register Screen 1 -->
+    <string name="register">Register</string>
+    <string name="get_to_know_better">Let\'s get to know you better</string>
+    <string name="full_name">Full Name</string>
+    <string name="enter_full_name">Enter your full name</string>
+    <string name="age">Age</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="age_hint">Age</string>
+    <string name="phone_hint">+123456789</string>
+    <string name="leadership_position">Leadership Position</string>
+    <string name="select_position">Select a position</string>
+    <string name="continue_password_setup">Continue to Password Setup</string>
+    <string name="required_field">*</string>
+
+    <!-- Register Screen 2 -->
+    <string name="almost_done">Almost Done!</string>
+    <string name="setup_account_security">Set up your account security</string>
+    <string name="create_strong_password">Create a strong password</string>
+    <string name="password_strength">Password strength</string>
+    <string name="at_least_8_characters">At least 8 characters</string>
+    <string name="one_uppercase_letter">One uppercase letter</string>
+    <string name="one_lowercase_letter">One lowercase letter</string>
+    <string name="one_number">One number</string>
+    <string name="one_special_character">One special character</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="confirm_your_password">Confirm your password</string>
+    <string name="agree_terms">I agree to the Terms of Service and Privacy Policy</string>
+    <string name="create_account">Create My Account</string>
+    <string name="terms_of_service">Terms of Service</string>
+    <string name="privacy_policy">Privacy Policy</string>
+
+    <!-- Onboarding Screen 1 -->
+    <string name="welcome_to_together">Welcome to Together!</string>
+    <string name="onboarding_desc_1">Your smart pocket assistant for easy and fun youth club management. Stay connected, stay active, and make your club better than ever!</string>
+    <string name="next">Next →</string>
+
+    <!-- Onboarding Screen 2 -->
+    <string name="what_you_can_do">What You Can Do</string>
+    <string name="manage_member">-Manage Members </string>
+    <string name="plan_project">-Plan Projects </string>
+    <string name="manage_task">-Manage Tasks </string>
+    <string name="track_budGet">-Track Budget </string>
+    <string name="youth_steps">YOUTH\nSTEPS</string>
+
+    <!-- Onboarding Screen 3 -->
+    <string name="ready_to_get_started">Ready to Get Started?</string>
+    <string name="onboarding_desc_3">Let\'s simplify your youth club work together.</string>
+    <string name="get_started">Get Started →</string>
+
+    <!-- Launch Screen -->
+    <string name="empowering_youth">Empowering Youth</string>
+    <string name="organizing_unity">Organizing Unity</string>
+
+    <!-- General -->
+    <string name="loading">Loading...</string>
+    <string name="and">" and "</string>
+
+    <!-- Home Screen -->
+    <string name="good_morning">Good Morning!</string>
+    <string name="good_afternoon">Good Afternoon!</string>
+    <string name="good_evening">Good Evening!</string>
+    <!-- <string name="rakindu_rajapaksha">Rakindu Rajapaksha</string> -->
+    <string name="active_members">Active Members</string>
+    <string name="active_projects">Active Projects</string>
+    <string name="pending_tasks">Pending Tasks</string>
+    <string name="quick_actions">Quick Actions</string>
+    <string name="manage_members_short">Manage\nMembers</string>
+    <string name="plan_projects_short">Plan\nProjects</string>
+    <string name="manage_tasks_short">Manage\nTasks</string>
+    <string name="track_budget_short">Track\nBudget</string>
+    <string name="recent_activity">Recent Activity</string>
+    <string name="upcoming_events">Upcoming Events</string>
+
+    <!-- Activity Feed -->
+    <string name="new_member_joined">New member joined the club</string>
+    <string name="sarah_joined">Sarah Johnson joined as Event Coordinator</string>
+    <string name="project_deadline">Project deadline approaching</string>
+    <string name="garden_project_due">Community Garden project due in 3 days</string>
+    <string name="budget_updated">Budget updated</string>
+    <string name="monthly_budget">Monthly budget allocated: $500</string>
+    <string name="time_2h_ago">2h ago</string>
+    <string name="time_1d_ago">1d ago</string>
+    <string name="time_3d_ago">3d ago</string>
+
+    <!-- Events -->
+    <string name="youth_leadership_workshop">Youth Leadership Workshop</string>
+    <string name="workshop_date">Aug 28, 2025 • 2:00 PM</string>
+    <string name="participants_15">15 participants</string>
+    <string name="community_service_day">Community Service Day</string>
+    <string name="service_date">Sep 5, 2025 • 9:00 AM</string>
+    <string name="all_members_invited">All members invited</string>
+
+    <!-- Profile Screen -->
+    <string name="personal_information">Personal Information</string>
+    <string name="account_settings">Account Settings</string>
+    <string name="privacy_security">Privacy &amp; Security</string>
+    <string name="help_support">Help &amp; Support</string>
+    <string name="logout">Logout</string>
+    <string name="rakindu_email">rakindu03@gmail.com</string>
+    <string name="age_22">22 years old</string>
+    <string name="phone_0755980398">0755980398</string>
+    <string name="position_president">President</string>
+
+    <!-- Content Descriptions -->
+    <string name="profile_picture">Profile Picture</string>
+    <string name="backbtn">Back</string>
+    <string name="notifications">Notifications</string>
+    <string name="edit_profile">Edit Profile</string>
+
+    <string name="app_name">Youth Club Manager</string>
+
+    <!-- Track Budget Screen -->
+    <string name="track_budget">Track Budget</string>
+    <string name="total_balance">Total Balance</string>
+    <string name="currency">Rs.</string>
+    <string name="total_income">Total Income</string>
+    <string name="total_expenses">Total Expenses</string>
+    <string name="add_new_entry">Add New Entry</string>
+    <string name="type">Type</string>
+    <string name="amount">Amount (Rs.)</string>
+    <string name="title">Title</string>
+    <string name="date">Date</string>
+    <string name="add_record">Add Record</string>
+    <string name="income">Income</string>
+    <string name="expenses">Expenses</string>
+    <string name="fundraising_event">Fundraising Event</string>
+
+    <!-- Manage Tasks Screen -->
+    <string name="manage_tasks">Manage Tasks</string>
+    <string name="add_new_task">Add New Task</string>
+    <string name="task_name">Task Name</string>
+    <string name="assign_to_optional">Assign To (Optional)</string>
+    <string name="due_date">Due Date</string>
+    <string name="add_task">Add Task</string>
+    <string name="current_tasks">Current Tasks</string>
+    <string name="buy_refreshments">Buy refreshments</string>
+    <string name="assigned_to">Assigned to:</string>
+    <string name="due">Due:</string>
+    <string name="pending">PENDING</string>
+    <string name="lahiru">Lahiru</string>
+    <string name="aug_10">Aug 10</string>
+
+    <!-- Plan Projects Screen -->
+    <string name="plan_projects">Plan Projects</string>
+    <string name="create_new_club_activities">Create new club activities</string>
+    <string name="upcoming_projects">Upcoming Projects</string>
+    <string name="blood_donation_camp">Blood Donation Camp</string>
+    <string name="shramadana_in_school">Shramadana in School</string>
+    <string name="monthly_club_meeting">Monthly Club Meeting</string>
+    <string name="environmental_cleanup_drive">Environmental Clean-up Drive</string>
+    <string name="project_name">Project Name</string>
+    <string name="enter_project_name">Enter project name...</string>
+    <string name="time">Time</string>
+    <string name="location">Location</string>
+    <string name="temple_school_ground">Temple, School Ground, GN Office...</string>
+    <string name="submit">Submit</string>
+
+    <!-- Manage Members Screen -->
+    <string name="manage_members">Manage Members</string>
+    <string name="total_members">Total Members</string>
+    <string name="present_today">Present Today</string>
+    <string name="attendance_rate">Attendance Rate</string>
+    <string name="search_members">Search members</string>
+    <string name="todays_attendance">Today\'s Attendance</string>
+    <string name="mark_all_present">Mark All Present</string>
+    <string name="rakindu_rajapaksha">Rakindu Rajapaksha</string>
+    <string name="president">President</string>
+    <string name="sahan_tharaka">Sahan Tharaka</string>
+    <string name="vice_president">Vice President</string>
+    <string name="omesha_perera">Omesha Perera</string>
+    <string name="secretary">Secretary</string>
+    <string name="omindu_dilen">Omindu Dilen</string>
+    <string name="member">Member</string>
+-->
+    <!-- Common -->
+    <string name="back">Back</string>
+    <string name="search">Search</string>
+    <string name="content_description_back">Go back</string>
+    <string name="content_description_search">Search</string>
+    <string name="content_description_calendar">Select date</string>
+    <string name="content_description_time">Select time</string>
+</resources>

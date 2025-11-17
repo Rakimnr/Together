@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.together">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/together"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/together"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- Launch Screen -->
+        <activity
+            android:name=".LaunchActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!-- Onboarding 1 -->
+        <activity
+            android:name=".Onboarding1Activity"
+            android:exported="false"
+            android:theme="@style/OnboardingTheme" />
+
+        <!-- Onboarding 2 -->
+        <activity
+            android:name=".Onboarding2Activity"
+            android:exported="false"
+            android:theme="@style/OnboardingTheme" />
+
+        <!-- Onboarding 3 -->
+        <activity
+            android:name=".Onboarding3Activity"
+            android:exported="false"
+            android:theme="@style/OnboardingTheme" />
+
+        <!-- 3) AUTH SCREENS -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"
+            android:theme="@style/AuthTheme" />
+        <activity
+            android:name=".Register1Activity"
+            android:exported="false"
+            android:theme="@style/AuthTheme" />
+        <activity
+            android:name=".Register2Activity"
+            android:exported="false"
+            android:theme="@style/AuthTheme" />
+
+        <!-- 4) MAIN APP SCREENS -->
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ManageMembersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ManageTaskActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlanProjectsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TrackBudgetActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+
+    </application>
+
+</manifest>
